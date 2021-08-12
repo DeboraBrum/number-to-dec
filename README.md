@@ -4,11 +4,11 @@ Solução simples para exercitar o uso de DOM
 
 ### Design
 
-![Design do exercício](./assets/preview.png);
+![Design do exercício](./assets/preview.PNG);
 
 ### Link
 
-- URL: [Acess here](https://deborabrum.github.io/LandingPage-FrontendMentor-challenge/)
+- URL: [Acess here](https://deborabrum.github.io/number-to-dec/)
 
 ### Tecnologias utilizadas
 
