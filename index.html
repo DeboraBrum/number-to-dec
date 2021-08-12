@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converta Números</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Style-->
+    <link href="./CSS/layout.css" rel="stylesheet" />
+    <link href="./CSS/spacing.css" rel="stylesheet" />
+    <link href="./CSS/style.css" rel="stylesheet" />
+
+    <script src="main.js" defer></script>
+  </head>
+  <body class="flex-row align-center justify-center">
+    <main class="container">
+      <h1 class="mb-7">Converta um número para base decimal</h1>
+
+      <div class="msg-erro hidden">
+        <span class="erro"></span>
+      </div>
+
+      <section class="flex-column gap-10 align-center">
+        <div
+          class="first-number flex-row align-center justify-between gap-10 mb-2"
+        >
+          <div class="flex-column">
+            <label class="mb-1" for="numero"
+              >Digite o número a ser convertido</label
+            >
+            <input
+              id="numero"
+              type="text"
+              required
+              placeholder="1110"
+              class="numero-entrada"
+            />
+          </div>
+
+          <div class="flex-column">
+            <label class="mb-1" for="base"
+              >Selecione a base numérica do número digitado</label
+            >
+            <select id="base" class="base-number">
+              <option value="">- Selecione -</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="convert mb-4">Converter</button>
+
+        <span class="numero-saida hidden"></span>
+      </section>
+    </main>
+  </body>
+</html>
